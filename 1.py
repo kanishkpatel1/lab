@@ -1,16 +1,16 @@
-a={"kanishk":"DJ Jhinga Jee No- 1 DJ Rhea ke Bhai","hii":"hlw"}
-# print(a.values())
-# print(a.items())
-# b={"name":"kanishk","ram":"sita"}
-# (a.update(b))
-# print(a)
-
-for x in a:
-    print(a[x])
-# this will print values
-for x,y in a.items():
-    print(x,y)
-a["hii"]=100
-print(a)
-
-
+try:
+    a=int(input("Enter the number :"))
+    b=int(input("Enter the number:"))
+    c=a/b
+    print(c)    
+# except ZeroDivisionError:
+#     print("zero division error")
+# except ValueError:
+#     print("value error")
+except Exception as e:
+    print("Error in this code is:",e)
+else:
+    print("No error occured:")
+finally:        #thios block always execute weather error came or not
+    print("kanishk")
+    
